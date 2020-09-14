@@ -1,4 +1,4 @@
-package lambdas;
+package Lesson_02_lambdas;
 
 import java.util.Comparator;
 
