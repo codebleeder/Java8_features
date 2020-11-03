@@ -2,7 +2,7 @@ package Lesson_02_lambdas;
 
 import java.util.Comparator;
 
-public class ComparatorLambdaExample {
+public class Example_02_ComparatorLambda {
     public static void main(String[] args) {
         // old way:
         Comparator<Integer> comparator = new Comparator<Integer>() {

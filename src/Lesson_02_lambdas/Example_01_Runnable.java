@@ -1,6 +1,6 @@
 package Lesson_02_lambdas;
 
-public class RunnableExample {
+public class Example_01_Runnable {
     public static void main(String[] args) {
         Runnable runnable = new Runnable() {
             @Override

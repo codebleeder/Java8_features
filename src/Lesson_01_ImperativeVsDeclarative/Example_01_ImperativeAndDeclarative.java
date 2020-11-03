@@ -2,7 +2,7 @@ package Lesson_01_ImperativeVsDeclarative;
 
 import java.util.stream.IntStream;
 
-public class P_01_ImperativeAndDeclarative {
+public class Example_01_ImperativeAndDeclarative {
     public static void main(String[] args){
         // sum of 1 to 100:
         // imperative:
