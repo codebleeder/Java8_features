@@ -31,7 +31,10 @@ ClassName::new
 |---------------|:-------------:|
 | .stream()| convert collection to stream API|
 | .filter()| filter items with expression |
-| .collect()|map to custom object|
+| .collect()|map to custom object - like aggregator; mostly used as terminating statement|
+| .map()| |
+| .flatMap()|used when each element is a collection/array|
+
 
 #### Collections vs Streams:
 
@@ -41,4 +44,4 @@ ClassName::new
 |elements can be accessed in any order|only in one sequence|
 |eagerly constructed|lazily constructed|
 |Can be traversed more than once|Can be traversed only once|
-|External iteration|Internal iteration|
+|External iteration; you have to explicitly iterate through elements|Internal iteration|

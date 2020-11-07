@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 
 public class Example_04_PredicateStudent {
     static Predicate<Student> p1 = student -> student.getGradeLevel()>3;
-    static Predicate<Student> p2 = student -> student.getGpa()>3;
+    public static Predicate<Student> p2 = student -> student.getGpa()>3;
     public static void main(String[] args) {
 
         List<Student> students = StudentDataBase.getAllStudents();
