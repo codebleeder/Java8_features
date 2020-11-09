@@ -53,5 +53,23 @@ public class Example_04_DistinctCountSorted {
                 .sorted()
                 .collect(toList());
         System.out.println("sorted activity counts: " + sortedActivitiesCount);
+
+        // reverse:
+        List<String> sortedNames2 = StudentDataBase.getAllStudents()
+                .stream()
+                .sorted(Comparator.comparing(Student::getName).reversed())
+                .map(Student::getName)
+                .collect(toList());
+        System.out.println("reverse sorted names: " + sortedNames2);
+
+        // activities reverse sorted:
+        List<String> reverseSortedActivities = StudentDataBase.getAllStudents()
+                .stream()
+                .map(s->s.getActivities())
+                .flatMap(a->a.stream())
+                .distinct()
+                .sorted(Comparator.reverseOrder())
+                .collect(toList());
+        System.out.println("reverse sorted activities: " + reverseSortedActivities);
     }
 }

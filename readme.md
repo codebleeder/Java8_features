@@ -34,6 +34,7 @@ ClassName::new
 | .collect()|map to custom object - like aggregator; mostly used as terminating statement|
 | .map()| |
 | .flatMap()|used when each element is a collection/array|
+| .reduce() | terminal operation like .collect(); reduce the contents of the stream to a single value |
 
 
 #### Collections vs Streams:
