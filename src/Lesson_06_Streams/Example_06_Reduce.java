@@ -15,6 +15,7 @@ public class Example_06_Reduce {
                 .reduce(1, (a,b)->a*b);
         System.out.println(product);
 
+        // reduce without identity argument will produce Optional<>:
         Optional<Student> highestGPA = StudentDataBase.getAllStudents()
                 .stream()
                 .reduce((a,b)->{

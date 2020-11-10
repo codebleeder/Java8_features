@@ -35,6 +35,14 @@ ClassName::new
 | .map()| |
 | .flatMap()|used when each element is a collection/array|
 | .reduce() | terminal operation like .collect(); reduce the contents of the stream to a single value |
+| .limit(n) | get first n values |
+| .skip(n) | skip first n values |
+| .anyMatch() | returns true if any one element satisfies the predicate |
+| .allMatch() | returns true only if all elements satisfy the condition |
+| .noneMatch() | returns true if none satisfy the predicate |
+| .findAny() | returns first encountered element |
+| .findFirst() | returns first matching element in the stream |
+  
 
 
 #### Collections vs Streams:
@@ -46,3 +54,17 @@ ClassName::new
 |eagerly constructed|lazily constructed|
 |Can be traversed more than once|Can be traversed only once|
 |External iteration; you have to explicitly iterate through elements|Internal iteration|
+
+#### Short-circuit functions:
+* They don't have to iterate through the whole stream
+* .limit(), 
+* .findFirst(), and .findAny(), 
+* .anyMatch(), .allMatch() and .noneMatch() 
+
+#### Streams API factory methods:
+
+|Function|Description|
+|:----:|:----:|
+|of() | creates stream of specified types|
+|iterate() | create infinite streams|
+|generate() | create infinite streams|
