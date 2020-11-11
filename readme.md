@@ -68,3 +68,27 @@ ClassName::new
 |of() | creates stream of specified types|
 |iterate() | create infinite streams|
 |generate() | create infinite streams|
+
+#### Numeric stream:
+IntStream, LongStream, DoubleStream
+
+|Function|Description|
+|:----:|:----:|
+|range(a,b) | produces int from a to b-1|
+|rangeClosed(a,b) | produces int from a to b|
+|sum() | |
+|asDoubleStream(), asIntStream(), asLongStream() | |
+|max() | |
+|min() | |
+|average() | |
+
+#### Boxing, UnBoxing, mapToInt
+|Function|Description|
+|:----:|:----:|
+|Boxing - boxed() | convert primitive to wrapper class type; Example: int to Integer|
+|UnBoxing - mapToInt() | convert wrapper class type to primitive type; Ex: Integer to int |
+|mapToObj() | convert items into stream of specified objects|
+|mapToLong() | |
+|mapToDouble() | |
+
+#### 
