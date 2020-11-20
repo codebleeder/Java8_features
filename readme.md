@@ -91,4 +91,12 @@ IntStream, LongStream, DoubleStream
 |mapToLong() | |
 |mapToDouble() | |
 
-#### 
+#### Terminal Operations
+|Function|Description|
+|:----:|:----:|
+|collect(joining()) | |
+|collect(counting()) or count() | |
+|collect(mapping()) | |
+|collect(minBy()), collect(maxBy()) | |
+|collect(summingInt()), collect(averagingInt()) | |
+|collect(groupingBy(classifier)), collect(groupingBy(classifier, downstream)), collect(groupingBy(classifier, supplier, downstream)) | |
