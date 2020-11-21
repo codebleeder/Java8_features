@@ -100,3 +100,10 @@ IntStream, LongStream, DoubleStream
 |collect(minBy()), collect(maxBy()) | |
 |collect(summingInt()), collect(averagingInt()) | |
 |collect(groupingBy(classifier)), collect(groupingBy(classifier, downstream)), collect(groupingBy(classifier, supplier, downstream)) | |
+|collect(partitioningBy(predicate)), collect(partitioningBy(predicate, downstream)) | |
+
+#### Parallel stream:
+* split the source and process them in parallel
+* combine the results
+
+* don't use parallel() when mutable variables are involved
