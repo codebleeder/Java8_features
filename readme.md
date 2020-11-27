@@ -107,3 +107,24 @@ IntStream, LongStream, DoubleStream
 * combine the results
 
 * don't use parallel() when mutable variables are involved
+
+#### Optionals
+* represents non-null value
+* avoids unnecessary null pointer exceptions and checks
+
+|Function|Description|
+|:----:|:----:|
+|orElse(), orElseGet(), orElseThrow() | |
+|ifPresent(), isPresent() | |
+
+#### Abstract classes vs Interfaces
+
+| |Abstract classes|Interfaces|
+|:----:|:----:|:----:|
+|instance variable |allowed |not allowed |
+
+* Java 8 supports multiple inheritance 
+    * Java 8 runs child implementation over parent implementation whenever there is conflict in multiple inheritance
+
+
+
