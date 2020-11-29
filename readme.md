@@ -126,5 +126,9 @@ IntStream, LongStream, DoubleStream
 * Java 8 supports multiple inheritance 
     * Java 8 runs child implementation over parent implementation whenever there is conflict in multiple inheritance
 
+#### DateTime
+
+* LocalDate is immutable
+
 
 
