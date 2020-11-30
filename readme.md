@@ -130,5 +130,8 @@ IntStream, LongStream, DoubleStream
 
 * LocalDate is immutable
 
+* parse - convert a string to LocalDate/LocalTime/LocalDateTime
+* format - convert LocalDate/LocalTime/LocalDateTime to string
+
 
 
